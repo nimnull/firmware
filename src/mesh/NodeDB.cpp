@@ -251,9 +251,13 @@ void NodeDB::installRoleDefaults(meshtastic_Config_DeviceConfig_Role role)
 
 void NodeDB::initModuleConfigIntervals()
 {
-    moduleConfig.telemetry.device_update_interval = default_broadcast_interval_secs;
-    moduleConfig.telemetry.environment_update_interval = default_broadcast_interval_secs;
-    moduleConfig.telemetry.air_quality_interval = default_broadcast_interval_secs;
+   // moduleConfig.telemetry.device_update_interval = default_broadcast_interval_secs;
+   // moduleConfig.telemetry.environment_update_interval = default_broadcast_interval_secs;
+   // moduleConfig.telemetry.air_quality_interval = default_broadcast_interval_secs;
+
+    moduleConfig.telemetry.device_update_interval = 3600;
+    moduleConfig.telemetry.environment_update_interval = 3600;
+    moduleConfig.telemetry.air_quality_interval = 3600;
 }
 
 void NodeDB::installDefaultChannels()
