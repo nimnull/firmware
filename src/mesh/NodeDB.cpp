@@ -173,7 +173,7 @@ void NodeDB::installDefaultConfig()
     config.lora.modem_preset = meshtastic_Config_LoRaConfig_ModemPreset_LONG_FAST;
     config.lora.hop_limit = HOP_RELIABLE;
     config.position.gps_enabled = true;
-    config.position.position_broadcast_smart_enabled = true;
+    config.position.position_broadcast_smart_enabled = false;
     config.position.broadcast_smart_minimum_distance = 100;
     config.position.broadcast_smart_minimum_interval_secs = 30;
     if (config.device.role != meshtastic_Config_DeviceConfig_Role_ROUTER)
