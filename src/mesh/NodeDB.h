@@ -208,7 +208,7 @@ extern NodeDB nodeDB;
 #define default_min_wake_secs 10
 #define default_screen_on_secs 60 * 10
 
-#define default_mqtt_address "mqtt.meshtastic.org"
+#define default_mqtt_address "mqtt.0x21h.net"
 #define default_mqtt_username "meshdev"
 #define default_mqtt_password "large4cats"
 
